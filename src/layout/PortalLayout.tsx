@@ -26,27 +26,34 @@ export default function PortalLayout({children}: {children:React.ReactNode}){
 
     return (
         <>
-        <header>
-          <nav>
+        <header className="principal">
+            <div className="container-pri">
+              <Link to="/" className="inicio">
+                Parking<span className="span">Location.</span>{" "}
+              </Link>
+            </div>
+            <nav>
             <ul>
               <li>
                 <Link to="/Perfil">Perfil</Link>
               </li>
-             
               <li>
                 <Link to="/Dashboard">Mapa navegacion</Link>
               </li>
               <li>
-                <Link to="/parqueadero">Crear Parqueadero</Link>
+                <Link to="/Posts">Crear Parqueadero</Link>
               </li>
+              
               <li>
-                <a href="#" onClick={handleSignOut}>
+                <a href="/" onClick={handleSignOut}>
                   Salir
                 </a>
+
+               
               </li>
             </ul>
           </nav>
-        </header>
+          </header>
   
         <main>{children}</main>
       </>

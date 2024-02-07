@@ -5,6 +5,7 @@ export interface AuthResponse{
         accessToken: string;
         refreshToken: string;
     };
+
 }
 
 export interface AuthResponseError{
@@ -12,8 +13,7 @@ export interface AuthResponseError{
         error: string;
     }
 }
-
-export interface ExtendedAuthContext {
+interface ExtendedAuthContext {
     esAutentico: boolean;
     getAccessToken: () => string;
     saveUser: (userData: AuthResponse) => void;
@@ -33,9 +33,11 @@ export interface User{
 }
 export interface parqueadero{
     _id: string;
-    nombre: string;
-    longitud: string;
-    altura:string ;
+    title: string;
+    content: string
+    longitud: number;
+    altura: number ;
+    puestos: number,
 }
 
 export interface AccessTokenResponse {

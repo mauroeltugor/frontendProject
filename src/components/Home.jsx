@@ -3,6 +3,13 @@ import DefaultLayout from "../layout/DefaultLayout";
 import React , {useState, useEffect}from "react";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
+//import { Projects } from './project';
+import Footer from './Footer'
+
+
+
+
+
 
 export const Home = () => {
 
@@ -67,13 +74,15 @@ export const Home = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src="https://th.bing.com/th/id/OIG.U8_0yhXRRVSN13JnzqE1?pid=ImgGn&w=1024&h=1024&rs=1" alt="Header Img"/>
+                  <img src="https://i.ibb.co/wQYC7K6/images-jpg-Photoroom-png-Photoroom.png" alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </div>
         </div>
       </div>
     </section>
+    <Footer />
+    
     </DefaultLayout>
     </div>
   )
