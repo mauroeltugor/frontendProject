@@ -14,9 +14,9 @@ export const AuthContext = createContext<ExtendedAuthContext>({
   getUser: () => ({} as User | undefined),
   signOut: () => {},
   getParqueadero: () => ({} as parqueadero | undefined),
-  saveParqueadero: (_newParqueadero: parqueadero) => {}, // Corrected function name
-  roles: [], // Add this line
+  saveParqueadero: (_parqueaderoData: AuthResponse) => void {}, // Corregido el nombre de la función
 });
+
 
 interface ExtendedAuthContext {
   esAutentico: boolean;
@@ -27,7 +27,6 @@ interface ExtendedAuthContext {
   signOut: () => void;
   getParqueadero: () => parqueadero | undefined;
   saveParqueadero: (parqueaderoData: AuthResponse) => void;
-  roles: string[]; // Add this line
 }
 
 export function AuthProvider({ children }: AuthProviderProps) {
@@ -160,9 +159,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
     setUser({ ...userInfo, roles: roles || [] });
   }
 
-  function saveParqueadero(parqueaderoData: AuthResponse) {
-    setParqueadero(parqueaderoData.body.parqueadero);
-  }
+  // function saveParqueadero(parqueaderoData: AuthResponse): void {
+  //   setParqueadero(parqueaderoData.body.parqueadero);
+  // }
 
   function getAccessToken() {
     return accessToken;
@@ -186,7 +185,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     );
   }
 
-  function saveParqueadero(parqueaderoData: AuthResponse) {
+  function saveParqueadero(parqueaderoData: AuthResponse): void {
     setParqueadero(parqueaderoData.body.parqueadero);
   }
 

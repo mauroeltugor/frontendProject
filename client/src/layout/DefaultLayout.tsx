@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Header } from "../components/Header";
+// import { Header } from "../components/Header.jsx"; // Assuming Header is in a .jsx file
 
 interface DefaultLayoutProps {
     children: React.ReactNode;
@@ -9,7 +9,7 @@ interface DefaultLayoutProps {
 const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <main>
                 {children}
             </main>

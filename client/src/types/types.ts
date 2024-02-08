@@ -13,7 +13,7 @@ export interface AuthResponseError{
         error: string;
     }
 }
-interface ExtendedAuthContext {
+export interface ExtendedAuthContext {
     esAutentico: boolean;
     getAccessToken: () => string;
     saveUser: (userData: AuthResponse) => void;
