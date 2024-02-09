@@ -7,12 +7,13 @@ export interface AuthResponse{
     };
 
 }
-
-export interface AuthResponseError{
-    body:{
-        error: string;
-    }
-}
+  
+  export interface AuthResponseError {
+    body: {
+      error: string;
+    };
+  }
+  
 export interface ExtendedAuthContext {
     esAutentico: boolean;
     getAccessToken: () => string;
