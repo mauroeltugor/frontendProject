@@ -6,7 +6,7 @@ import { API_URL } from "../Autenticacion/constanst";
 
 export default function Signup() {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
+  const [gmail, setGmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorResponse, setErrorResponse] = useState("");
 
@@ -23,7 +23,7 @@ export default function Signup() {
         },
         body: JSON.stringify({
           username,
-          email,
+          gmail,
           password
         })
       });
@@ -60,7 +60,7 @@ export default function Signup() {
               <label>Nombre</label>
               <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
               <label>Email</label>
-              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type="email" value={Gmail} onChange={(e) => setGmail(e.target.value)} />
               <label>Password</label>
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
               <button>Create Usuario</button>
