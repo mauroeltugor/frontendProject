@@ -9,7 +9,7 @@ export default function PortalLayout({children}: {children:React.ReactNode}){
         e.preventDefault();
         try {
             const response = await fetch(`${API_URL}/signout`,{
-                method: "DELETE",
+                method: "GET",
                 headers:{
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${auth.getRefreshToken()}`
