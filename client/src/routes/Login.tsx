@@ -6,7 +6,7 @@ import { API_URL } from "../Autenticacion/constanst";
 import { AuthResponse, AuthResponseError } from "../types/types";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
+  const [gmail, setGmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorResponse, setErrorResponse] = useState("");
   const [loading, setLoading] = useState(false); 
@@ -26,7 +26,7 @@ export default function Login() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          email,
+          gmail,
           password
         })
       });
@@ -71,8 +71,8 @@ export default function Login() {
               <label>Email</label>
               <input
                 type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)} />
+                value={gmail}
+                onChange={(e) => setGmail(e.target.value)} />
               <label>Password</label>
               <input
                 type="password"
