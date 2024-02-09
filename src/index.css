@@ -521,17 +521,7 @@ form {
 
 
 /*footer*/
-footer{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color:#043245;
-}
-.footer {
-  padding: 0;
- 
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .newsletter-bx {
   background: #000000;
   border-radius: 55px;
@@ -592,9 +582,7 @@ footer{
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-.footer img {
-  width: 26%;
-}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
