@@ -1,4 +1,4 @@
 {
-    "apiUrl":"http://localhost:5000/api/reserva"
+    "apiUrl":"https://backend-lnme.onrender.com/api/reserva"
   
 }
