@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import Puestos from "./puestos";
 import '../assets/Posts.css';
+import PortalLayout from "../layout/PortalLayout";
 
 
 const Reservas = () => {
@@ -38,7 +39,9 @@ const Reservas = () => {
   };
 
   return (
+         <PortalLayout>
     <div className="posts">
+  
       <div className="container">
       <Link to="/Posts">
           <Button color="primary">Regresar</Button>
@@ -104,7 +107,9 @@ const Reservas = () => {
           </div>
         </div>
       )}
+   
     </div>
+      </PortalLayout>
         
       
     
