@@ -152,32 +152,30 @@ const Posts = () => {
         </table>
       </div>
 
-      {modalOpen && (
-        <div className="modal-background">
-          <div className="modal">
-            <button onClick={() => setModalOpen(false)}>Cerrar</button>
-            <h2>Estado de los Puestos:</h2>
-            <div style={{ display: "flex", flexWrap: "wrap" }}>
-              {renderButtons()}
-            </div>
-            <div>
-              <h3>Selecciona una fecha y hora:</h3>
-              <DatePicker
-                selected={selectedDate}
-                onChange={handleDateChange}
-                showTimeSelect
-                dateFormat="MMMM d, yyyy h:mm aa"
-              />
-              <button onClick={handleReservation}>
-                Seleccionar fecha y hora
-              </button>
-            </div>
-            <Link to="/Reservas">
-              <button>Reserva</button>
-            </Link>
+      <Modal
+          isOpen={modalOpen}
+          onRequestClose={() => setModalOpen(false)}
+          contentLabel="Reservar"
+          
+        >
+          <button onClick={() => setModalOpen(false)} className="modal-boton"> Cerrar</button>
+          <h2>Estado de los Puestos:</h2>
+          <div style={{ display: "flex", flexWrap: "wrap" }} >
+            {renderButtons()}
+          </div >
+          <div>
+            <h3>Selecciona una fecha y hora:</h3>
+            <DatePicker
+              selected={selectedDate}
+              onChange={handleDateChange}
+              showTimeSelect
+              dateFormat="MMMM d, yyyy h:mm aa"
+            />
           </div>
-        </div>
-      )}
+          <Link to="/Reservas">
+            <button className="modal-boton">Reserva</button>
+          </Link>
+        </Modal>
       </PortalLayout>
     </div>
   );
