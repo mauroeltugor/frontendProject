@@ -61,7 +61,7 @@ const Posts = () => {
           />
           <button
             onClick={() => handleButtonClick(i)}
-            style={{ display: "block", margin: "auto" }}
+            style={{ display: "block", margin: "auto", background: "rgba(27,77,166,1)", color: "#fff"}}
           >
             {buttonStates[i] ? "Ocupado" : "Disponible"}
           </button>
