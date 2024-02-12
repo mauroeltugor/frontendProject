@@ -1,7 +1,6 @@
 /* Posts.css */
 
 .posts {
-  background-color: #f7f7f7;
   padding: 10px 0;
 }
 
@@ -15,12 +14,26 @@
   padding: 8px 15px;
   font-size: 14px;
   margin-right: 10px;
+  background: linear-gradient(90deg, rgba(27,77,166,1) 66%, rgba(42,5,69,1) 91%);  
   transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0069d9;
+.intento{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
+
+.botones-separar button{
+  background: linear-gradient(90deg, rgba(27,77,166,1) 66%, rgba(42,5,69,1) 91%);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, rgba(27,77,166,1) 66%, rgba(42,5,69,1) 91%);
+}
+
 
 .btn-danger:hover {
   background-color: #dc3545;
@@ -41,7 +54,7 @@
 }
 
 .table th {
-  background-color: #007bff;
+  background-color:rgba(27,77,166,1);
   color: #fff;
 }
 
@@ -63,7 +76,7 @@
 
 
 .modal-background {
-  position: relative;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -81,6 +94,12 @@
   max-width: 80%;
   max-height: 80%;
   overflow: auto;
+}
+
+.modal-boton{
+  background:  rgba(27,77,166,1);
+  color: #fff;
+
 }
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -103,5 +122,7 @@
     height: 200px; /* Adjust the height as needed */
   }
 }
+
+
 
 /* Add more styling as needed */
