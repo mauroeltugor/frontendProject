@@ -1,4 +1,5 @@
-// Footer.js
+/// Footer.js
+
 
 import '../assets/Footer.css';
 
@@ -8,27 +9,30 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-logo">ParkingLocation</div>
-          <ul className="footer-links">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/ContactUs">contactanos</a></li>
-            <li><a href="/dashboard">Login</a></li>
-            <li><a href="/signup">Registro</a></li>
-          </ul>
+
         </div>
 
         <div className="footer-section">
-          <h4>Contactanos</h4>
-          <p>Email: info@yourcompany.com</p>
-          <p>Phone: +57 3148448534</p>
+          <h3 className='contactanos'>Contactanos</h3>
+          <section className="icons">
+            <div className='infop'>
+              <span className='icon'><img src='https://i.ibb.co/CmqR8v9/correo-electronico.png' alt="" className='a-icon' /></span>
+              <h4 className='info1'>support@parkinglocation.com</h4>
+            </div>
+            <div className='infop'>
+              <span className='icon'><img src='https://i.ibb.co/7y5n39D/boton-de-simbolo-de-telefono.png' alt="" className='a-icon' /></span>
+              <h4 className='info1'>+57 314 844 8534</h4>
+            </div>
+          </section>
         </div>
 
         <div className="footer-section">
-          <h4>Follow Us</h4>
+          <h3 className='contactanos'>Siguenos</h3>
           <div className="footer-social">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#linkedin">LinkedIn</a>
-            <a href="#instagram">Instagram</a>
+            <a href="#facebook"><img src='https://i.ibb.co/Jj4GKf5/facebook.png' alt="" className='b-icon' /></a>
+            <a href="#twitter"><img src='https://i.ibb.co/h2RPYWK/gorjeo.png' alt="" className='b-icon' /></a>
+            <a href="#linkedin"><img src='https://i.ibb.co/54Bx5Gb/logotipo-de-linkedin.png' alt="" className='b-icon' /></a>
+            <a href="#instagram"><img src='https://i.ibb.co/9pmt92D/instagram.png' alt="" className='b-icon' /></a>
           </div>
         </div>
       </div>
