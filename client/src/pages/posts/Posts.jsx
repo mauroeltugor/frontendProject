@@ -91,7 +91,19 @@ const Posts = () => {
       <PortalLayout>
       <Mapa posts={posts} />
       <div className="container">
-        <h2>Crear Parqueaderos</h2>
+         <div className="intento">
+            <h2>Crear Parqueaderos</h2>
+            <div className="botones-separar">
+              <Link to="/Dashboard">
+                <button>Regresar</button>
+              </Link>
+              <button onClick={() => navigate("/post/new")}>
+                Nuevo parqueadero
+              </button>
+
+            </div>
+          </div>
+        
         <table className="table">
           <thead>
             <tr>
@@ -130,7 +142,7 @@ const Posts = () => {
                   </button>
                 </td>
                 <td>
-                  <button onClick={() => handleReservaClick(post)}>
+                  <button onClick={() => handleReservaClick(post)} className="btn btn-danger">
                     Puestos
                   </button>
                 </td>
@@ -138,12 +150,6 @@ const Posts = () => {
             ))}
           </tbody>
         </table>
-        <Link to="/Dashboard">
-          <button>Regresar</button>
-        </Link>
-        <button onClick={() => navigate("/post/new")}>
-          Nuevo parqueadero
-        </button>
       </div>
 
       {modalOpen && (
