@@ -146,7 +146,7 @@ label {
 }
 .form-area {
 	flex: 1;
-	padding: 20px;
+	padding: -38px;
 	background-color: #fff;
 	text-align: center;
 	display: flex;
