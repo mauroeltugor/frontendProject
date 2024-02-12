@@ -38,6 +38,8 @@ const Dashboard = () => {
                 <th>Latitud</th>
                 <th>Longitud</th>
                 <th>Puestos</th>
+                 <th>info</th>
+                <th>puestos</th>
               </tr>
             </thead>
             <tbody>
