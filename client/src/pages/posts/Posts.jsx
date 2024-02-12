@@ -7,6 +7,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 // import "../../assets/posts.css";//../../assets/posts.css
 import PortalLayout from "../../layout/PortalLayout";
+import Modal from "react-modal"; 
 
 const Posts = () => {
   const navigate = useNavigate();
