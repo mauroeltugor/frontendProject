@@ -21,7 +21,7 @@ const ContactUs = () => {
   return (
     <div>
       <DefaultLayout>
-        <form ref={refForm} onSubmit={handleSubmit}>
+        <form ref={refForm} onSubmit={handleSubmit} className="formulario">
           <div>
             <h2>Envio peticiones o reclamos a parkingLocation</h2>
             <p>Llenar formulario completo</p>
