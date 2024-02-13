@@ -157,6 +157,7 @@ const Posts = () => {
           isOpen={modalOpen}
           onRequestClose={() => setModalOpen(false)}
           contentLabel="Reservar"
+          style={{ overlay: { zIndex: 1000 }, content: { zIndex: 1001 } }}
           
         >
           <button onClick={() => setModalOpen(false)} className="modal-boton"> Cerrar</button>
