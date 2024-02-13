@@ -1,16 +1,69 @@
+/* Estilos para el formulario de contacto */
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff8a;
+  box-shadow: 0px 0px 20px #2c3e4c8f;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+p {
+  color: #000;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+}
+
 .btn-send {
-    background-color: #007bff; /* Color azul por defecto */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Animación de transición */
-  }
-  
-  /* Estilo al pasar el cursor sobre el botón (color verde) */
-  .btn-send:hover {
-    background-color: #4caf50; /* Color verde al pasar el cursor */
-  }
-  .header-contact{
-    color: antiquewhite;
-  }
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, rgba(27,77,166,1) 66%, rgba(42,5,69,1) 91%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+  background-color: #59057a;
+}
