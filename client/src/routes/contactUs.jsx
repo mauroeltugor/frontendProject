@@ -1,6 +1,7 @@
 import DefaultLayout from "../layout/DefaultLayout";
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
+import '../assets/Contac.css'
 
 
 const ContactUs = () => {
