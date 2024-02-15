@@ -603,7 +603,7 @@ form {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000; /* Ajusta el z-index según sea necesario */
+  z-index: 1800; /* Ajusta el z-index según sea necesario */
 }
 
 .custom-modal-content {
