@@ -20,7 +20,7 @@ export default function Login() {
     setLoading(true); 
 
     try {
-      const response = await fetch(`${API_URL}/login`, {
+      const response = await fetch(`${API_URL}/Login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -37,7 +37,7 @@ export default function Login() {
 
         if (json.body.accessToken && json.body.refreshToken) {
           auth.saveUser(json);
-          navigate("/dashboard");
+          navigate("/");
         }
       } else {
         console.log("Error en el inicio de sesión.");

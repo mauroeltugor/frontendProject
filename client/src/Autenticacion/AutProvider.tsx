@@ -10,7 +10,7 @@ export const AuthContext = createContext<ExtendedAuthContext>({
   esAutentico: false,
   getAccessToken: () => "",
   saveUser: (_userData: AuthResponse) => {},
-  getRefreshToken: () => null,
+  getRefreshToken: () => "",
   getUser: () => ({} as User | undefined),
   signOut: () => {},
   getParqueadero: () => ({} as parqueadero | undefined),

@@ -7,10 +7,6 @@ import TrackVisibility from 'react-on-screen';
 import Footer from './Footer'
 
 
-
-
-
-
 export const Home = () => {
 
   const [loopNum, setLoopNum] = useState(0);
