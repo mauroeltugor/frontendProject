@@ -87,6 +87,11 @@ const Posts = () => {
     setModalOpen(false); // Cerrar el modal después de la reserva
   };
 
+  const handleDelete = async (post) => {
+    setPosts(posts.filter((p) => p._id !== post._id));
+    await axios.delete(`${config.apiUrl}/${post._id}`);
+  };
+
   return (
     <div className="posts">
       <PortalLayout>
