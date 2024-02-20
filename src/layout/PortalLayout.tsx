@@ -2,6 +2,7 @@ import React from "react";
 import { useAuth } from "../Autenticacion/AutProvider";
 import { Link } from "react-router-dom";
 import { API_URL } from "../Autenticacion/constanst";
+import Footer from "../components/Footer";
 export default function PortalLayout({children}: {children:React.ReactNode}){
  const auth = useAuth();
 
@@ -56,6 +57,7 @@ export default function PortalLayout({children}: {children:React.ReactNode}){
           </header>
   
         <main>{children}</main>
+        <Footer/>
       </>
     )
 }

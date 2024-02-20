@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Header }  from "../components/Header";
+import Footer from "../components/Footer";
 
 
 interface DefaultLayoutProps {
@@ -14,7 +15,7 @@ export default function DefaultLayout({ children }: DefaultLayoutProps) {
             <main>
                 {children}
             </main>
-
+            <Footer />
         </>
     )
 

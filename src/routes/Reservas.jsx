@@ -54,8 +54,6 @@ const Reservas = () => {
               <th>telefono</th>
               <th>vehiculo</th>
               <th>año</th>
-              <th>fecha</th>
-              <th>hora</th>
               
             </tr>
           </thead>
@@ -66,8 +64,6 @@ const Reservas = () => {
                 <td> {reserva.telefono} </td>
                 <td> {reserva.vehiculo} </td>
                 <td> {reserva.año} </td>
-                <td> {reserva.fecha} </td>
-                <td> {reserva.hora} </td>
                 
                 <td>
                   <button
@@ -90,20 +86,9 @@ const Reservas = () => {
           </tbody>
         
         </table>
-        <button onClick={toggleModal} className="btn btn-primary mb-4">
-          Reservar Asiento
-        </button>
+       
       </div>
-      {showModal && (
-        <div className="modal-container">
-          <div className="modal-content">
-            <button className="close-button" onClick={toggleModal}>
-              Close
-            </button>
-            <Puestos />
-          </div>
-        </div>
-      )}
+     
     </div>
         
       

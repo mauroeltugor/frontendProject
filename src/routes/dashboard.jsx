@@ -29,8 +29,8 @@ const Dashboard = () => {
       <div className="posts">
         <h1>Busqueda de parqueaderos</h1>
         <Mapa posts={parqueaderos} />
-        <div className="table-container">
-          <table>
+        <div className="container">
+          <table className="table">
             <thead>
               <tr>
                 <th>Titulo</th>
