@@ -26,7 +26,7 @@ const ReservaForm = ({ onReservaSubmit, onClose }) => {
   return (
     <div>
       <h3>Formulario de Reserva</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='form-reserva'>
         <label htmlFor="placa">Placa del carro:</label>
         <input
           type="text"

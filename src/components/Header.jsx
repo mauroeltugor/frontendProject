@@ -12,16 +12,16 @@ export const Header = () => {
             <nav>
               <ul>
                 <li>
-                  <Link to="/Home">Home</Link>
+                  <Link to="/Home">Inicio</Link>
                 </li>
                 <li>
-                  <Link to="/signup">Signup</Link>
+                  <Link to="/signup">Registro</Link>
+                </li>
+                <li>
+                  <Link to="/dashboard">Iniciar sesión</Link>
                 </li>
                 <li>
                   <Link to="/ContactUs">Contactos</Link>
-                </li>
-                <li>
-                  <Link to="/dashboard">Login</Link>
                 </li>
               </ul>
             </nav>

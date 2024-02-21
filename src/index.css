@@ -116,59 +116,112 @@ label {
   display: block;
 }
 
-/*login*/
+/*login-signup*/
 .form-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 90vh;
+  background-color: #DADADA;
 }
 .wrapper {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	
+	align-items: flex-start;
 	background: #fff;
 	padding: 20px;
-	width: 900px;
-	height: 568px;
+	width: 50%;
+	height: 58%;
 	border-radius: 10px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+.span-register{
+  color: #043245;
+}
+
+.crear {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to right, #043245 50%, #647492 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+}
+
+.crear:hover {
+  background-position: -100% 0;
+}
+
+.crear svg {
+  font-size: 25px;
+  
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.log-input{
+  width: 70%;
+  height: 30px;
+  border-style:double;
+  background-color: #e2dfdf;
+  outline: none;
+  border-width: 1px;
+  padding-left: 3px;
+}
+
+
+
+.log-input:focus{
+  border-color:#043245;
+}
+
+.log-input:focus::placeholder{
+  color:#043245;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
 .img-area {
-	flex: 1;
-	padding: 20px;
+	
+	width: 50%;
 	text-align: center;
+ 
 }
 .img-area img {
 	max-width: 100%;
 	height: auto;
 }
 .form-area {
-	flex: 1;
-	padding: 20px;
+	padding-left: 20px;
 	background-color: #fff;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+  height: 100%;
 }
 
 .form {
-  width: 400px;
-  margin: 60px auto;
-}
-
-input[type="text"],
-[type="password"],
-[type="email"] {
-  display: block;
-  padding: 10px;
-  box-sizing: border-box;
   width: 100%;
-  margin: 5px 0 10px 0;
-  border-radius: 10px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-
+ height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 @media (max-width: 768px) {
@@ -220,7 +273,7 @@ button {
   min-width: 100px;
   border-radius: 5px;
   color: #000;
-  margin-top: 9px;
+  
 }
 
 
@@ -288,7 +341,7 @@ a:hover{
   color: #647492;
 }
 
-form {
+.form-reserva {
   padding: 1.8rem;
   background-position: center;
   background-size: cover;

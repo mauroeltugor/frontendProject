@@ -5,6 +5,7 @@ import DefaultLayout from "../layout/DefaultLayout"
 import { API_URL } from "../Autenticacion/constanst";
 import type { AuthResponseError } from "../types/types";
 
+
 export default function Signup() {
   const [username, setUsername] = useState("");
   const [gmail, setGmail] = useState("");
@@ -59,15 +60,18 @@ export default function Signup() {
           </div>
           <div className="form-area">
             <form className="form" onSubmit={handleSubmit}>
-              <h1>Signup</h1>
+              <h1 className="span-register">¡Únete a nosotros!</h1>
+              <h2>Registro</h2>
               {!!errorResponse && <div className="errorMessage">{errorResponse}</div>}
-              <label>Nombre</label>
-              <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}></input>
-              <label>Email</label>
-              <input type="email" value={gmail} onChange={(e) => setGmail(e.target.value)}></input>
-              <label>password</label>
-              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
-              <button>Create Usuario</button>
+              <div className="inputs">
+              <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="log-input" placeholder="Nombre"></input>
+
+              <input type="email" value={gmail} onChange={(e) => setGmail(e.target.value)} className="log-input" placeholder="Email"></input>
+
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="log-input" placeholder="Contraseña"></input>
+
+              </div>
+              <button className="crear">Crear Usuario</button>
             </form>
           </div>
         </div>

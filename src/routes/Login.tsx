@@ -68,19 +68,26 @@ export default function Login() {
           </div>
           <div className="form-area">
             <form className="form" onSubmit={handleSubmit}>
-              <h1>Login</h1>
+            <h1 className="span-register">Accede a tu cuenta</h1>
+            <h2>Inicia sesión</h2>
               {!!errorResponse && <div className="errorMessage">{errorResponse}</div>}
-              <label>Email</label>
+              <div className="inputs">
               <input
                 type="email"
                 value={gmail}
-                onChange={(e) => setGmail(e.target.value)}></input>
-              <label>password</label>
+                onChange={(e) => setGmail(e.target.value)}
+                placeholder="Email"
+                className="log-input"></input>
+              
               <input
                 type="password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}></input>
-              <button>Login</button>
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Contraseña"
+                className="log-input"></input>
+
+              </div>
+              <button className="crear">Acceder</button>
             </form>
           </div>
         </div>

@@ -12,8 +12,6 @@ const Reserva = () => {
       telefono: "",
       vehiculo: "",
       año: "",
-      fecha: "",
-      hora: "",
   });
   
 
@@ -82,20 +80,6 @@ const Reserva = () => {
             placeholder="año..."
             name="año"
             value={reserva.año}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="fecha..."
-            name="fecha"
-            value={reserva.fecha}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Hora..."
-            name="hora"
-            value={reserva.hora}
             onChange={handleChange}
           />
           <button onClick={handleSubmit} className="btn btn-primary">
