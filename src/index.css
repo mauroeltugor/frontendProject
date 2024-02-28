@@ -84,6 +84,42 @@
   height: 450px;
   width: 400px;
 }
+
+/*modal chatbot*/
+.ReactModal__Content{
+  width: 40vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.ReactModal__Overlay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalC{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame{
+  border: none;
+  height: 70%;
+  padding-bottom: 15px;
+}
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -168,21 +204,22 @@ label {
 .log-input{
   width: 70%;
   height: 30px;
-  border-style:double;
+  border: 2px solid #ccc;
   background-color: #e2dfdf;
   outline: none;
   border-width: 1px;
   padding-left: 3px;
+  transition: border-color 0.3s ease-in-out;
 }
 
 
 
 .log-input:focus{
-  border-color:#043245;
+  border-color: #007bff;
 }
 
 .log-input:focus::placeholder{
-  color:#043245;
+  color:#007bff;
 }
 
 .inputs{

@@ -1,7 +1,7 @@
 import DefaultLayout from "../layout/DefaultLayout";
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
-
+import '../assets/contactUs.css'
 
 const ContactUs = () => {
   const refForm = useRef(null);
@@ -21,8 +21,8 @@ const ContactUs = () => {
   return (
 <div>
       <DefaultLayout>
-        <form ref={refForm} onSubmit={handleSubmit} className="formulario">
-          <div>
+        <form ref={refForm} onSubmit={handleSubmit} className="formulario-contactos">
+          <div  class="titles">
             <h2>Envio peticiones o reclamos a parkingLocation</h2>
             <p>Llenar formulario completo</p>
           </div>
@@ -38,7 +38,7 @@ const ContactUs = () => {
             <label className="symbol-required">Mensaje</label>
             <textarea maxLength={500} placeholder="Escribe tu mensaje" name="message" id="" cols={30} rows={10}></textarea>
           </fieldset>
-          <button className="btn-send" type="submit">Enviar</button>
+          <button className="crear" type="submit">Enviar</button>
         </form>
       </DefaultLayout>
     </div>

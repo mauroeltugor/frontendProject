@@ -3,6 +3,7 @@ import DefaultLayout from "../layout/DefaultLayout";
 import React, { useState, useEffect } from "react";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
+import Chatbot from "./chatbot";
 //import { Projects } from './project';
 import Footer from './Footer'
 
@@ -19,6 +20,17 @@ export const Home = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = ["somos ParkingLocation"];
+
+  const  [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal= () => {
+    setModalIsOpen(true);
+  }
+
+  const closeModal= () => {
+    setModalIsOpen(false);
+  }
+
 
 
   useEffect(() => {
@@ -66,7 +78,8 @@ export const Home = () => {
                       <span className="tagline">Bienvenido Usuario</span>
                       <h1>{`¡Hola Aventureros! `} <span className="txt-rotate" data-rotate='[ "Somos ParkingLocation." ]'><span className="wrap">{text}</span></span></h1>
                       <p>¡Bienvenido a ParkingLocation! Encuentra, reserva y simplifica tu estacionamiento en segundos. Explora una variedad de parqueaderos cercanos, filtra por precios, horarios y servicios, todo para hacer tu vida más fácil. Simplifica tu rutina de estacionamiento con nosotros.</p>
-                      <button onClick={() => console.log('connect')}>Ver video <ArrowRightCircle size={25} /></button>
+                      <button onClick={openModal}>Abrir chat<ArrowRightCircle size={25} /></button>
+                      <Chatbot isOpen={modalIsOpen} closeModal={closeModal} />
                     </div>}
                 </TrackVisibility>
               </div>
