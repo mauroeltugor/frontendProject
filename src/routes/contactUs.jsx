@@ -21,6 +21,7 @@ const ContactUs = () => {
   return (
 <div>
       <DefaultLayout>
+        <div className="formContainer">
         <form ref={refForm} onSubmit={handleSubmit} className="formulario-contactos">
           <div  class="titles">
             <h2>Envio peticiones o reclamos a parkingLocation</h2>
@@ -28,18 +29,20 @@ const ContactUs = () => {
           </div>
           <fieldset className="field-name">
             <label htmlFor="username" className="symbol-required name">Name</label>
-            <input name="username" type="text" placeholder="ej: Maria Luisa" required />
+            <input name="username" type="text" className="log-input" placeholder="Nombre" required />
           </fieldset>
           <fieldset className="field-email">
             <label htmlFor="email" className="symbol-required">Email</label>
-            <input type="email" placeholder="ej marialuisaalonso850@gmail.com" name="email" required />
+            <input type="email" className="log-input" placeholder="Email" name="email" required />
           </fieldset>
           <fieldset className="field-message">
             <label className="symbol-required">Mensaje</label>
-            <textarea maxLength={500} placeholder="Escribe tu mensaje" name="message" id="" cols={30} rows={10}></textarea>
+            <textarea maxLength={500} placeholder="Escribe tu mensaje" className="log-input" name="message" id="" cols={30} rows={10}></textarea>
           </fieldset>
           <button className="crear" type="submit">Enviar</button>
         </form>
+
+        </div>
       </DefaultLayout>
     </div>
   );
